@@ -1,0 +1,300 @@
+.hidden {
+  display: none !important;
+}
+html {
+  height: 100%;
+}
+body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  font-family: 'Raleway', sans-serif;
+  font-size: 16px;
+  background: #fff url("images/light-gray-micro-carbon.png");
+}
+.main-container {
+  width: 80%;
+  margin: auto;
+  display: flex;
+  min-height: 100%;
+  flex-direction: column;
+}
+.main-header-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  background-color: rgba(255,255,255,0.7);
+  min-height: 46px;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  margin: 5px;
+  border-radius: 4px;
+}
+.main-header-container >.home-tag {
+  display: flex;
+  padding: 5px;
+}
+.main-header-container >.home-tag >a {
+  text-decoration: none;
+  color: #000;
+}
+.main-header-container >.home-tag >a:hover {
+  color: #fff;
+  text-shadow: 0 0 3px #000;
+  cursor: pointer;
+}
+.main-header-container >.home-tag p {
+  margin: 5px;
+  font-family: 'Dancing Script', cursive;
+  font-size: 26px;
+}
+.main-header-container >.home-tag >i {
+  display: block;
+  margin: auto 5px;
+}
+.main-header-container >.profile-container {
+  position: relative;
+  cursor: pointer;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  padding: 5px;
+  box-sizing: border-box;
+  max-height: 52px;
+}
+.main-header-container >.profile-container >a {
+  line-height: 32px;
+  text-decoration: none;
+  color: #000;
+  margin: 5px;
+}
+.main-header-container >.profile-container >a:hover {
+  color: #fff;
+  text-shadow: 0 0 3px #000;
+  cursor: pointer;
+}
+.main-header-container >.profile-container >.profile-popup {
+  overflow: hidden;
+  position: absolute;
+  top: 52px;
+  right: 0;
+  display: flex;
+  flex-direction: column;
+  box-sizing: border-box;
+}
+.main-header-container >.profile-container >.profile-popup >a {
+  position: relative;
+  transform: translateX(115px);
+  padding: 0 15px;
+  background-color: #fff;
+  border-radius: 30px;
+  line-height: 32px;
+  text-decoration: none;
+  color: #000;
+  margin: 5px;
+}
+.main-header-container >.profile-container >.profile-popup >a:hover {
+  color: #fff;
+  text-shadow: 0 0 3px #000;
+  cursor: pointer;
+}
+.main-header-container >.profile-container >.profile-popup >a >i {
+  margin-right: 5px;
+}
+.main-header-container >.profile-container >.profile-data {
+  height: 42px;
+  display: flex;
+  background-color: #fff;
+  border-radius: 30px;
+  padding: 0 15px;
+}
+.main-header-container >.profile-container >.profile-data >.profile-img {
+  margin: auto;
+  box-shadow: #000 0 0 5px;
+  display: block;
+  min-width: 36px;
+  min-height: 36px;
+  max-width: 36px;
+  max-height: 36px;
+  border-radius: 50%;
+  -webkit-background-size: cover;
+  background-size: cover;
+}
+.main-header-container >.profile-container >.profile-data >p {
+  display: block;
+  padding: 0;
+  margin: auto 5px;
+}
+.main-body-container {
+  height: 100%;
+  display: flex;
+  justify-content: center;
+}
+.main-body-container >div {
+  background-color: rgba(255,255,255,0.7);
+  border-radius: 4px;
+  margin: 5px 5px;
+}
+.main-body-container >.center-body-container {
+  display: flex;
+  flex-direction: column;
+  padding: 10px;
+  width: 85%;
+  min-height: 100%;
+}
+.main-body-container >.left-sidebar-container {
+  overflow: hidden;
+  min-width: 15%;
+  min-height: 100%;
+}
+.main-body-container >.left-sidebar-container >.sidebar-accordion {
+  list-style: none;
+  padding-left: 0;
+  margin: 20px 20px;
+}
+.main-body-container >.left-sidebar-container >.sidebar-accordion li {
+  padding: 5px 0;
+  min-width: 170px;
+}
+.main-body-container >.left-sidebar-container >.sidebar-accordion li >i {
+  padding: 5px;
+  box-sizing: border-box;
+  width: 28px;
+  height: 26px;
+}
+.main-body-container >.left-sidebar-container >.sidebar-accordion li:hover {
+  color: #fff;
+  text-shadow: 0 0 3px #000;
+  cursor: pointer;
+}
+.registration-container {
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  position: absolute;
+  display: flex;
+  background-color: rgba(115,115,115,0.9);
+  width: 100%;
+  height: 100%;
+}
+.registration-container >form {
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+  background-color: #fff;
+}
+.registration-container >form >a {
+  text-decoration: none;
+  color: #000;
+  width: 28px;
+}
+.registration-container >form >a:hover {
+  color: #fff;
+  text-shadow: 0 0 3px #000;
+  cursor: pointer;
+}
+.registration-container >form >h2 {
+  text-align: center;
+  margin: 0;
+}
+.registration-container >form >.registration-ul {
+  list-style: none;
+  padding: 0;
+}
+.registration-container >form >.registration-ul li {
+  padding: 5px;
+}
+.registration-container >form >.registration-ul input {
+  height: 28px;
+  width: 100%;
+  box-sizing: border-box;
+}
+.login-container {
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  position: absolute;
+  background-color: rgba(115,115,115,0.9);
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.login-container >form {
+  background-color: #fff;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  width: 250px;
+}
+.login-container >form >ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  box-sizing: border-box;
+}
+.login-container >form >ul >li {
+  width: 100%;
+  padding: 2px;
+  box-sizing: border-box;
+}
+.login-container >form >ul >li >input {
+  height: 28px;
+  width: 100%;
+  box-sizing: border-box;
+}
+.login-container >form >a {
+  text-decoration: none;
+  color: #000;
+  width: 28px;
+  height: 32px;
+}
+.login-container >form >a:hover {
+  color: #fff;
+  text-shadow: 0 0 3px #000;
+  cursor: pointer;
+}
+.login-container >form >h2 {
+  text-align: center;
+}
+input[type ='submit'],
+button[type='submit'] {
+  margin-top: 10px;
+  margin-bottom: 5px;
+  height: 30px;
+  align-self: center;
+  width: 50%;
+  padding: 5px;
+  box-sizing: border-box;
+  font-family: 'Raleway', sans-serif;
+  font-size: 16px;
+  border-radius: 2px;
+  border-style: none;
+  border-color: none;
+  border-image: none;
+  background-color: #c3c3c3;
+}
+input[type ='submit']:hover,
+button[type='submit']:hover {
+  background-color: #e1e1e1;
+  box-shadow: #000 3px 3px 5px;
+  cursor: pointer;
+}
+.profile-form-container {
+  align-self: center;
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+}
+.profile-form-container >ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}

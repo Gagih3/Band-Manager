@@ -1,0 +1,20 @@
+{% extends 'index.html' %}
+
+{% block registration %}
+    <div class="registration-container">
+    <form method="post" action="">
+        <a href="/main"><i class="fas fa-arrow-left fa-2x"></i></a>
+        <h2>Регистрация<hr></h2>
+        {% csrf_token %}
+        <ul class="registration-ul">
+            {% for field in form %}
+                <li>
+                    {{ field.label_tag }}
+                    {{ field }}
+                </li>
+            {% endfor %}
+        </ul>
+        <input type="submit" value="Registration">
+    </form>
+    </div>
+{% endblock %}

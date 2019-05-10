@@ -1,0 +1,18 @@
+{% extends 'index.html' %}
+
+{% block login %}
+    <div class="login-container">
+        <form method="post" class="login-form">
+            <a href="/main"><i class="fas fa-arrow-left fa-2x"></i></a>
+            <h2>Войти<hr></h2>
+            {% csrf_token %}
+            <ul>
+                {% for f in form %}
+                    <li>{{ f.label }}:</li>
+                    <li>{{ f }}</li>
+                {% endfor %}
+            </ul>
+            <input type="submit" value="LogIn">
+        </form>
+    </div>
+{% endblock %}
